@@ -36,29 +36,44 @@ a{color:inherit}
 .skip:focus{left:12px; top:12px; width:auto; height:auto; background:#fff; color:#000; padding:8px 10px; border-radius:10px; z-index:9999}
 
 .nav{
-  position:sticky; top:0; z-index:50;
-  backdrop-filter:blur(14px);
-  background:rgba(6,10,16,.55);
-  border-bottom:1px solid rgba(130,170,220,.12);
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.82);
+  backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid rgba(15,23,42,.08);
 }
 .nav-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0; gap:16px}
-.brand{display:flex; align-items:center; gap:10px; text-decoration:none; font-weight:700}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800;
+  letter-spacing:.2px;
+  font-size:22px;
+  text-decoration:none;
+  color:var(--text);
+}
 .logo{
-  width:34px; height:34px; border-radius:12px;
+  width:50px;
+  height:50px;
+  border-radius:14px;
+  display:inline-block;
   background:
-    url("/assets/img/logo-mark.png") center/contain no-repeat,
-    linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-  box-shadow:0 10px 28px rgba(31,26,23,.18);
-  border:1px solid var(--border);
+    url("/assets/img/logo-mark.png") center/cover no-repeat,
+    linear-gradient(135deg, rgba(255,153,200,.95), rgba(125,162,255,.95));
+  box-shadow:0 10px 24px rgba(10,20,35,.12);
+  animation:floaty 8s ease-in-out infinite;
 }
 .nav-links{display:flex; gap:8px; flex-wrap:wrap}
 .nav-links a{
+  color:rgba(11,16,32,.78);
   text-decoration:none;
-  padding:10px 12px;
-  border-radius:var(--radius-pill);
-  color:var(--muted);
-  border:1px solid transparent;
+  font-weight:700;
+  padding:10px 10px;
+  border-radius:12px;
 }
+
 .nav-links a:hover{
   color:var(--text);
   background:rgba(76,201,240,.10);
@@ -85,12 +100,13 @@ p{margin:10px 0; color:var(--muted); line-height:1.65}
 
 .pill-row{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 8px}
 .pill{
-  padding:10px 12px;
-  border-radius:var(--radius-pill);
-  border:1px solid var(--border);
-  background:rgba(255,255,255,.70);
-  color:rgba(234,242,255,.85);
-  font-weight:600;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid rgba(15,23,42,.10);
+  color:var(--text);
+  background:rgba(255,255,255,.75);
+  font-weight:700;
+  font-size:13px;
 }
 
 .btn-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
@@ -105,9 +121,10 @@ p{margin:10px 0; color:var(--muted); line-height:1.65}
   color:var(--text);
 }
 .btn.primary{
-  background:linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-  color:#061019;
-  box-shadow:0 12px 28px rgba(31,26,23,.18);
+  background:linear-gradient(135deg, var(--accent), #ff8fb9);
+  border-color:rgba(255,143,185,.40);
+  color:#0b1020;
+  box-shadow:0 14px 30px rgba(255,143,185,.22);
 }
 .btn:hover{transform:translateY(-1px)}
 
@@ -155,3 +172,65 @@ input[type="search"]::placeholder{color:rgba(31,26,23,.45)}
 
 
 :focus-visible{outline:2px solid rgba(90,214,255,.75); outline-offset:3px; border-radius:10px}
+
+.card-img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:16px;
+  border:1px solid rgba(15,23,42,.08);
+  background:rgba(255,255,255,.9);
+  margin-bottom:12px;
+}
+.card-meta{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:8px;
+}
+.badge-soft{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(15,23,42,.10);
+  background:rgba(255,255,255,.7);
+  color:var(--text);
+  font-weight:700;
+  font-size:12px;
+}
+
+.hero-illust{
+  width:100%;
+  height:150px;
+  object-fit:contain;
+  margin:10px 0 14px;
+  filter:drop-shadow(0 14px 22px rgba(10,20,35,.10));
+}
+.search input{
+  height:48px;
+  font-size:15px;
+}
+
+.post-hero-img{
+  width:100%;
+  max-width:980px;
+  height:240px;
+  object-fit:cover;
+  border-radius:24px;
+  border:1px solid rgba(15,23,42,.08);
+  margin:18px 0 18px;
+  background:#fff;
+}
+.callout{
+  padding:16px;
+  border-radius:18px;
+  border:1px solid rgba(15,23,42,.10);
+  background:rgba(255,255,255,.75);
+}
+
+.brand:hover .logo{transform:translateY(-2px) scale(1.02)}
+.brand:hover{opacity:.98}

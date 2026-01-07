@@ -9,7 +9,8 @@
       "sueño",
       "habitación",
       "luz"
-    ]
+    ],
+    "image": "/assets/img/illust-nightlight.svg"
   },
   {
     "title": "Checklist: qué mirar antes de comprar un vigilabebés",
@@ -21,7 +22,8 @@
       "seguridad",
       "monitor",
       "cámara"
-    ]
+    ],
+    "image": "/assets/img/illust-babymonitor.svg"
   },
   {
     "title": "Cómo elegir y mantener un cambiador (para que dure)",
@@ -33,6 +35,7 @@
       "hogar",
       "rutina",
       "cambiador"
-    ]
+    ],
+    "image": "/assets/img/illust-changingtable.svg"
   }
 ]

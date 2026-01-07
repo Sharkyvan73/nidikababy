@@ -49,8 +49,8 @@
     <div class="hero-grid">
       <div class="h-card">
         <div class="kicker">Guías para familias</div>
-        <h1>Guías rápidas de bebé y hogar para comprar mejor (sin perder tiempo).</h1>
-        <p>Guías y comparativas de bebé y hogar para elegir con confianza y ahorrar tiempo a las familias.</p>
+        <h1>Lo mejor para tu bebé y tu hogar, sin agobios.</h1>
+        <p>Guías claras, comparativas útiles y checklists para decidir rápido y con confianza.</p>
         <div class="pill-row" aria-label="Características">
           <div class="pill">Enfoque práctico</div>
           <div class="pill">Selección útil</div>
@@ -61,13 +61,14 @@
           <a class="btn primary" href="/#guias">Ver guías</a>
           <a class="btn" href="/#comparativas">Ver comparativas</a>
         </div>
+        <p class="small" style="margin:14px 0 8px;color:var(--muted);font-weight:600">Busca por tema: sueño, paseo, seguridad, lactancia, hogar…</p>
         <div class="search" role="search" aria-label="Buscar guías y comparativas">
-          <input type="search" data-search placeholder="Buscar (ej. sueño, seguridad, carrito…)" aria-label="Buscar posts" />
+          <input type="search" data-search placeholder="Escribe aquí lo que necesitas (ej. sueño, carrito, vigilabebés…)" aria-label="Buscar posts" />
         </div>
-        <p class="small">
-      </div>
+        </div>
       <div class="h-card">
   <div class="badge"><span class="dot"></span><span>Para familias</span></div>
+  <img class="hero-illust" src="/assets/img/hero-illustration.svg" alt="" loading="eager" />
   <h2>Qué encontrarás aquí</h2>
   <p class="small">Guías y comparativas de bebé y hogar para elegir con confianza y ahorrar tiempo en el día a día.</p>
   <ul class="small" style="margin:0; padding-left:16px; color: var(--muted)">
@@ -80,10 +81,18 @@
     </div>
   </section>
 
+  
   <section class="section" id="guias">
-    <div class="kicker">Guías y comparativas</div>
-    <div class="grid" style="margin-top:10px" data-post-list></div>
-    <p class="small" id="comparativas">Usa el buscador para filtrar por tema.</p>
+    <div class="kicker">Guías</div>
+    <p class="small">Contenido rápido y práctico para tomar decisiones sin perder tiempo.</p>
+    <div class="grid" style="margin-top:12px" data-post-list data-filter="Guía"></div>
+  </section>
+
+  <section class="section" id="comparativas">
+    <div class="kicker">Comparativas</div>
+    <p class="small">Tablas claras de pros/contras y recomendaciones por presupuesto.</p>
+    <div class="grid" style="margin-top:12px" data-post-list data-filter="Comparativa"></div>
+    <p class="small" style="margin-top:10px;color:var(--muted)">¿Aún no ves comparativas? Estamos publicando las primeras esta semana.</p>
   </section>
 </main>
 
