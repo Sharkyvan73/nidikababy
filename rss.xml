@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Nidikababy</title>
+    <link>https://nidikababy.com/</link>
+    <description>Guías y comparativas de bebé y hogar.</description>
+    <language>es-es</language>
+    
+    <item>
+      <title>Cómo elegir una luz nocturna para bebé (sin interrumpir el sueño)</title>
+      <link>https://nidikababy.com/posts/luz-nocturna-bebe.html</link>
+      <guid>https://nidikababy.com/posts/luz-nocturna-bebe.html</guid>
+      <description>Guía práctica: luz cálida, brillo regulable, sensor/temporizador y 3 opciones recomendadas.</description>
+      <pubDate>Sun, 04 Jan 2026 22:50:08 GMT</pubDate>
+    </item>
+    <item>
+      <title>Checklist: qué mirar antes de comprar un vigilabebés</title>
+      <link>https://nidikababy.com/posts/checklist-vigilabebes.html</link>
+      <guid>https://nidikababy.com/posts/checklist-vigilabebes.html</guid>
+      <description>Tipo, alcance real, batería, visión nocturna, alertas y privacidad. 3 opciones recomendadas.</description>
+      <pubDate>Sun, 04 Jan 2026 22:50:08 GMT</pubDate>
+    </item>
+    <item>
+      <title>Cómo elegir y mantener un cambiador (para que dure)</title>
+      <link>https://nidikababy.com/posts/cambiador-bebe-como-elegir.html</link>
+      <guid>https://nidikababy.com/posts/cambiador-bebe-como-elegir.html</guid>
+      <description>Altura, limpieza, seguridad y accesorios útiles. Checklist y 3 recomendaciones típicas.</description>
+      <pubDate>Sun, 04 Jan 2026 22:50:08 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
