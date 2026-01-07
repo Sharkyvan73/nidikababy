@@ -31,7 +31,7 @@
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="/">
-        <span class="logo" aria-hidden="true"></span>
+        <img class="logo" src="/assets/img/logo-mark.png" alt="Nidikababy" width="54" height="54" loading="eager" decoding="async" />
         <span>Nidikababy</span>
       </a>
       <nav class="nav-links" aria-label="Principal">
@@ -46,53 +46,81 @@
   
 <main class="container" id="contenido">
   <section class="hero">
-    <div class="hero-grid">
-      <div class="h-card">
-        <div class="kicker">Guías para familias</div>
-        <h1>Lo mejor para tu bebé y tu hogar, sin agobios.</h1>
-        <p>Guías claras, comparativas útiles y checklists para decidir rápido y con confianza.</p>
-        <div class="pill-row" aria-label="Características">
-          <div class="pill">Enfoque práctico</div>
-          <div class="pill">Selección útil</div>
-          <div class="pill">Contenido evergreen</div>
-          <div class="pill">Enfoque SEO</div>
+    <div class="hero-banner">
+      <div class="hero-banner-inner">
+        <div class="hero-copy">
+<div class="brand-hero">
+            <img class="brand-hero-logo" src="/assets/img/logo-mark.png" alt="Nidikababy" width="72" height="72" loading="eager" decoding="async"/>
+            <div>
+              <div class="brand-hero-name">Nidikababy</div>
+              <div class="brand-hero-tag">Guías para familias</div>
+            </div>
+          </div>
+
+          <h1>Lo mejor para tu bebé y tu hogar, sin agobios.</h1>
+          <p class="lead">Guías claras, comparativas honestas y checklists para decidir rápido y con confianza.</p>
+
+          <div class="btn-row">
+            <a class="btn primary" href="#guias">Ver guías</a>
+            <a class="btn" href="#comparativas">Ver comparativas</a>
+          </div>
+
+          <div class="search-block" role="search" aria-label="Buscar guías y comparativas">
+            <div class="search-label">¿Qué necesitas hoy?</div>
+            <div class="search">
+              <input type="search" data-search placeholder="Ej.: luz nocturna, vigilabebés, cambiador…" aria-label="Buscar posts" />
+            </div>
+            <div class="small hint">Escribe una necesidad y te mostramos las guías relacionadas.</div>
+          </div>
+
+          <div class="pill-row" aria-label="Características">
+            <div class="pill">Enfoque práctico</div>
+            <div class="pill">Selección útil</div>
+            <div class="pill">Contenido evergreen</div>
+            <div class="pill">Enfoque SEO</div>
+          </div>
         </div>
-        <div class="btn-row">
-          <a class="btn primary" href="/#guias">Ver guías</a>
-          <a class="btn" href="/#comparativas">Ver comparativas</a>
+      
+
+        <article class="card feature" id="para-familias">
+        <div class="badge"><span class="dot"></span><span>Para familias</span></div>
+        <div class="pf-illus"><img src="/assets/img/para-familias-family.png" alt="Familia en casa con sus mascotas" width="720" height="520" loading="lazy" decoding="async" /></div>
+        <h2>Qué encontrarás aquí</h2>
+        <p class="small">Recomendaciones pensadas para ahorrar tiempo, reducir dudas y comprar con tranquilidad.</p>
+        <ul class="small bullets">
+          <li><strong>Guías rápidas</strong> con lo importante (sin relleno).</li>
+          <li><strong>Comparativas</strong> con pros y contras claros.</li>
+          <li><strong>Checklists</strong> para casa y rutinas.</li>
+          <li><strong>Consejos de uso</strong> para que todo sea más fácil.</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn" href="#guias">Ver guías</a>
+          <a class="btn" href="#comparativas">Ver comparativas</a>
         </div>
-        <p class="small" style="margin:14px 0 8px;color:var(--muted);font-weight:600">Busca por tema: sueño, paseo, seguridad, lactancia, hogar…</p>
-        <div class="search" role="search" aria-label="Buscar guías y comparativas">
-          <input type="search" data-search placeholder="Escribe aquí lo que necesitas (ej. sueño, carrito, vigilabebés…)" aria-label="Buscar posts" />
-        </div>
-        </div>
-      <div class="h-card">
-  <div class="badge"><span class="dot"></span><span>Para familias</span></div>
-  <img class="hero-illust" src="/assets/img/hero-illustration.svg" alt="" loading="eager" />
-  <h2>Qué encontrarás aquí</h2>
-  <p class="small">Guías y comparativas de bebé y hogar para elegir con confianza y ahorrar tiempo en el día a día.</p>
-  <ul class="small" style="margin:0; padding-left:16px; color: var(--muted)">
-    <li><strong>Guías rápidas</strong> con lo importante (sin relleno).</li>
-    <li><strong>Comparativas</strong> con pros y contras claros.</li>
-    <li><strong>Checklists</strong> para preparar casa y rutinas.</li>
-    <li><strong>Consejos de uso</strong> para que todo sea más fácil.</li>
-  </ul>
-  </div>
+      </article>
+      </div>
+    </div>
+
+    <div class="hero-cards">
+      
+
+      <article class="card note" aria-label="Nota">
+        <h3>Cómo trabajamos</h3>
+        <p class="small">Analizamos opciones, resumimos lo que importa y lo dejamos claro con pros/contras. Sin vueltas.</p>
+        <div class="small"><strong>Tip:</strong> guarda la web y vuelve cuando tengas una compra importante.</div>
+      </article>
     </div>
   </section>
 
-  
   <section class="section" id="guias">
     <div class="kicker">Guías</div>
-    <p class="small">Contenido rápido y práctico para tomar decisiones sin perder tiempo.</p>
-    <div class="grid" style="margin-top:12px" data-post-list data-filter="Guía"></div>
+    <div class="grid" style="margin-top:10px" data-post-list data-post-type="guia"></div>
   </section>
 
   <section class="section" id="comparativas">
     <div class="kicker">Comparativas</div>
-    <p class="small">Tablas claras de pros/contras y recomendaciones por presupuesto.</p>
-    <div class="grid" style="margin-top:12px" data-post-list data-filter="Comparativa"></div>
-    <p class="small" style="margin-top:10px;color:var(--muted)">¿Aún no ves comparativas? Estamos publicando las primeras esta semana.</p>
+    <div class="grid" style="margin-top:10px" data-post-list data-post-type="comparativa"></div>
+    <p class="small" style="margin-top:10px">¿Aún no ves comparativas? Estamos publicando las primeras esta semana.</p>
   </section>
 </main>
 

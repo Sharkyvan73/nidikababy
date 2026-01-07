@@ -1,41 +1,47 @@
 [
   {
     "title": "Cómo elegir una luz nocturna para bebé (sin interrumpir el sueño)",
-    "excerpt": "Guía práctica: luz cálida, brillo regulable, sensor/temporizador y 3 opciones recomendadas.",
+    "desc": "Guía práctica: luz cálida, brillo regulable, sensor/temporizador y 3 opciones recomendadas.",
     "url": "/posts/luz-nocturna-bebe.html",
-    "type": "Guía",
+    "type": "guia",
+    "category": "Sueño",
     "minutes": "6–9 min",
     "tags": [
       "sueño",
       "habitación",
       "luz"
     ],
-    "image": "/assets/img/illust-nightlight.svg"
+    "date": "2026-01-05",
+    "image": "/assets/img/posts/luz-nocturna.svg"
   },
   {
     "title": "Checklist: qué mirar antes de comprar un vigilabebés",
-    "excerpt": "Tipo, alcance real, batería, visión nocturna, alertas y privacidad. 3 opciones recomendadas.",
+    "desc": "Tipo, alcance real, batería, visión nocturna, alertas y privacidad. 3 opciones recomendadas.",
     "url": "/posts/checklist-vigilabebes.html",
-    "type": "Guía",
+    "type": "guia",
+    "category": "Seguridad",
     "minutes": "6–10 min",
     "tags": [
       "seguridad",
       "monitor",
       "cámara"
     ],
-    "image": "/assets/img/illust-babymonitor.svg"
+    "date": "2026-01-04",
+    "image": "/assets/img/posts/vigilabebes.svg"
   },
   {
     "title": "Cómo elegir y mantener un cambiador (para que dure)",
-    "excerpt": "Altura, limpieza, seguridad y accesorios útiles. Checklist y 3 recomendaciones típicas.",
+    "desc": "Altura, limpieza, seguridad y accesorios útiles. Checklist y 3 recomendaciones típicas.",
     "url": "/posts/cambiador-bebe-como-elegir.html",
-    "type": "Guía",
+    "type": "guia",
+    "category": "Hogar",
     "minutes": "7–11 min",
     "tags": [
       "hogar",
       "rutina",
       "cambiador"
     ],
-    "image": "/assets/img/illust-changingtable.svg"
+    "date": "2026-01-03",
+    "image": "/assets/img/posts/cambiador.svg"
   }
 ]
