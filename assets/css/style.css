@@ -219,9 +219,7 @@ img{max-width:100%; height:auto}
 .post-card:focus-within{outline:3px solid rgba(127,185,255,.38);outline-offset:2px}
 .card-link:focus-visible{outline:none}
 
-@media (max-width: 980px){
-  .hero-banner-inner{grid-template-columns:1fr; padding:18px}
-  .hero-copy h1{font-size:2.1rem}
+.hero-copy h1{font-size:2.1rem}
   .hero-cards{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
   .nav-links{gap:8px;flex-wrap:wrap;justify-content:flex-end}
@@ -248,4 +246,21 @@ img{max-width:100%; height:auto}
 }
 .card.feature:hover .pf-illus img{
   transform:scale(1.04);
+}
+
+@media (max-width: 980px){
+  .hero-banner-inner{grid-template-columns:1fr; padding:18px}
+  .hero-copy h1{font-size:2.1rem}
+  .hero-cards{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .nav-links{gap:8px;flex-wrap:wrap;justify-content:flex-end}
+  .logo{width:48px;height:48px}
+
+  /* Mejor contraste en móvil */
+  .lead, .small, .hint, .kicker{color:var(--text)}
+  .pill{background:rgba(255,255,255,.92); border-color:rgba(31,41,55,.14); color:var(--text)}
+
+  /* Para familias: imagen más contenida en móvil */
+  #para-familias .pf-illus{padding:10px}
+  #para-familias .pf-illus img{max-height:240px; object-fit:cover}
 }
