@@ -383,3 +383,26 @@ img{max-width:100%; height:auto}
   .pick-media{width:72px; flex:0 0 72px}
   .pick-media img{width:60px;height:60px}
 }
+
+/* Luces: imágenes de producto */
+.aff-media{
+  width:100%;
+  background:rgba(255,255,255,.7);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  margin:10px 0 10px;
+}
+.aff-media img{
+  width:100%;
+  height:170px;
+  object-fit:contain;
+  display:block;
+}
+.pick-media img{
+  object-fit:contain;
+  background:#fff;
+}
+@media (max-width: 980px){
+  .aff-media img{height:160px}
+}
