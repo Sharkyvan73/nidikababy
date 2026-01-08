@@ -336,3 +336,5 @@ img{max-width:100%; height:auto}
 @media (max-width: 980px){
   .aff-grid{grid-template-columns:1fr}
 }
+
+.aff-grid-quick{grid-template-columns:repeat(3,1fr)}
