@@ -707,3 +707,22 @@ html, body { overflow-x: hidden; }
   .mname{font-size:18px; line-height:1.15;}
   .mtype{font-size:14px;}
 }
+
+/* === V22 tweaks === */
+.hero-big-logo{
+  filter: drop-shadow(0 10px 26px rgba(0,0,0,.18)) drop-shadow(0 0 1px rgba(0,0,0,.35));
+}
+
+.hero-banner-inner #para-familias{
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.hero-cards{
+  grid-template-columns: 1fr;
+}
+
+/* Mobile comparison cards: remove Pros/Contras labels (chips only) */
+@media (max-width: 720px){
+  .mrow-title{ display:none !important; }
+}
