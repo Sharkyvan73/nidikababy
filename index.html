@@ -36,8 +36,8 @@
       </a>
       <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">☰</button>
       <nav class="nav-links" id="site-nav" aria-label="Principal">
-        <a href="/#guias">Guías</a>
-        <a href="/#comparativas">Comparativas</a>
+        <a href="/guias.html">Guías</a>
+        <a href="/productos.html">Productos</a>
         <a href="/about.html">Sobre mí</a>
         <a href="/contact.html">Contacto</a>
         <a href="/legal.html">Legal</a>
@@ -59,24 +59,21 @@
           </div>
 
           <h1>Lo mejor para tu bebé y tu hogar, sin agobios.</h1>
-          <p class="lead">Guías claras, comparativas honestas y checklists para decidir rápido y con confianza.</p>
+          <p class="lead">Guías claras, selecciones honestas y checklists para decidir rápido y con confianza.</p>
 
           <div class="btn-row">
-            <a class="btn primary" href="#guias">Ver guías</a>
-            <a class="btn" href="#comparativas">Ver comparativas</a>
+            <a class="btn primary" href="/guias.html">Ver guías</a>
+            <a class="btn" href="#selecciones">Ver productos</a>
           </div>
 
-          <div class="search-block" role="search" aria-label="Buscar guías y comparativas">
+          <div class="search-block" role="search" aria-label="Buscar guías y selecciones">
             <div class="search-label">¿Qué necesitas hoy?</div>
             <div class="search">
               <input type="search" data-search placeholder="Ej.: luz nocturna, vigilabebés, cambiador…" aria-label="Buscar posts" />
             </div>
             <div class="small hint">Escribe una necesidad y te mostramos las guías relacionadas.</div>
           </div>
-
-          <div class="pill-row" aria-label="Características">
-            <div class="pill">Enfoque práctico</div>
-            <div class="pill">Selección útil</div>
+<div class="pill">Selección útil</div>
             <div class="pill">Contenido evergreen</div>
             <div class="pill">Enfoque SEO</div>
           </div>
@@ -90,13 +87,13 @@
         <p class="small">Recomendaciones pensadas para ahorrar tiempo, reducir dudas y comprar con tranquilidad.</p>
         <ul class="small bullets">
           <li><strong>Guías rápidas</strong> con lo importante (sin relleno).</li>
-          <li><strong>Comparativas</strong> con pros y contras claros.</li>
+          <li><strong>Selecciones</strong> con pros y contras claros.</li>
           <li><strong>Checklists</strong> para casa y rutinas.</li>
           <li><strong>Consejos de uso</strong> para que todo sea más fácil.</li>
         </ul>
         <div class="cta-row">
-          <a class="btn" href="#guias">Ver guías</a>
-          <a class="btn" href="#comparativas">Ver comparativas</a>
+          <a class="btn" href="/guias.html">Ver guías</a>
+          <a class="btn" href="#selecciones">Ver productos</a>
         </div>
       </article>
       </div>
@@ -107,21 +104,38 @@
 
       <article class="card note" aria-label="Nota">
         <h3>Cómo trabajamos</h3>
-        <p class="small">Analizamos opciones, resumimos lo que importa y lo dejamos claro con pros/contras. Sin vueltas.</p>
-        <div class="small"><strong>Tip:</strong> guarda la web y vuelve cuando tengas una compra importante.</div>
-      </article>
+        <p class="small">Trabajamos con una idea simple: ayudarte a decidir rápido y con confianza.</p>
+        <ul class="work-list small">
+          <li><strong>Enfoque práctico:</strong> vamos a lo importante, sin relleno.</li>
+          <li><strong>Selección útil:</strong> pocas opciones, bien elegidas.</li>
+          <li><strong>Contenido evergreen:</strong> guías que siguen sirviendo meses después.</li>
+          <li><strong>Enfoque SEO:</strong> ordenamos la información para que la encuentres fácil.</li>
+        </ul></article>
     </div>
   </section>
 
+  
   <section class="section" id="guias">
-    <div class="kicker">Guías</div>
+    <div class="section-head">
+      <div>
+        <div class="kicker">Guías</div>
+        <h2>Las guías más visitadas</h2>
+        <p class="muted">Empieza por estas 3 y luego explora el resto.</p>
+      </div>
+      <a class="link" href="/guias.html">Ver todas →</a>
+    </div>
+
+    <div class="carousel" data-top-guides aria-label="Guías destacadas"></div>
+
+    <h3 style="margin-top:22px">Todas las guías</h3>
     <div class="grid" style="margin-top:10px" data-post-list data-post-type="guia"></div>
   </section>
 
-  <section class="section" id="comparativas">
-    <div class="kicker">Comparativas</div>
+
+  <section class="section" id="selecciones">
+    <div class="kicker">Selecciones</div>
     <div class="grid" style="margin-top:10px" data-post-list data-post-type="comparativa"></div>
-    <p class="small" style="margin-top:10px">¿Aún no ves comparativas? Estamos publicando las primeras esta semana.</p>
+    <p class="small" style="margin-top:10px">¿Aún no ves selecciones? Estamos publicando las primeras esta semana.</p>
   </section>
 </main>
 

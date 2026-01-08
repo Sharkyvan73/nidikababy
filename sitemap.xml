@@ -42,4 +42,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://nidikababy.com/guias.html</loc>
+  </url>
+
+  <url>
+    <loc>https://nidikababy.com/productos.html</loc>
+  </url>
 </urlset>
