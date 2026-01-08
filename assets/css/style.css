@@ -822,3 +822,88 @@ html, body { overflow-x: hidden; }
   .matrix-mobile .mname{font-size: 1.05rem;}
 }
 #para-familias{margin-left:auto;margin-right:auto;}
+
+/* V25: Apilado + centrado paneles Home + carrusel cuadrado (PC) */
+.home-panels .panels{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  align-items:center;
+}
+.home-panels #para-familias,
+.home-panels #como-trabajamos{
+  width:100%;
+  max-width: 980px;
+  margin:0 auto;
+}
+.home-panels #para-familias .pf-illus{max-height: 300px;}
+
+/* Carrusel top 3: una slide visible + miniatura cuadrada (sin imagen gigante) */
+#guias .carousel{
+  max-width: 980px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#guias .carousel-viewport{
+  overflow:hidden;
+  width:100%;
+}
+#guias .carousel-track{
+  display:flex;
+  width:100%;
+  transition:transform .55s ease;
+  will-change: transform;
+}
+#guias .carousel-card{
+  flex: 0 0 100% !important;
+  width:100%;
+}
+#guias .carousel-card .card-link{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+#guias .carousel-card .thumb{
+  width: min(420px, 100%);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow:hidden;
+  background: rgba(255,255,255,.65);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#guias .carousel-card .thumb img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+  display:block;
+}
+#guias .carousel-card .card-meta,
+#guias .carousel-card h3,
+#guias .carousel-card p{
+  text-align:center;
+}
+#guias .carousel-dots{
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  margin-top:10px;
+}
+#guias .carousel-dot{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.25);
+  background: rgba(255,255,255,.7);
+  cursor:pointer;
+}
+#guias .carousel-dot.active{
+  background: rgba(0,0,0,.35);
+}
+
+@media (max-width: 720px){
+  /* En móvil el carrusel ocupa el ancho, pero mantiene miniatura controlada */
+  #guias .carousel-card .thumb{width: min(360px, 100%);}  
+}
