@@ -427,3 +427,36 @@ img{max-width:100%; height:auto}
 .nav-links.is-open{
   display:flex !important;
 }
+
+/* Evita scroll horizontal en móvil */
+html, body{overflow-x:hidden}
+img, svg{max-width:100%; height:auto}
+
+/* Mobile overrides (authoritative) */
+@media (max-width: 1100px){
+  .nav .container{position:relative}
+  .nav-inner{flex-direction:row !important; align-items:center !important; justify-content:space-between !important; gap:10px !important}
+  .nav-toggle{display:inline-flex !important; margin-left:auto !important}
+  .nav-links{
+    display:none !important;
+    position:absolute !important;
+    top:64px !important;
+    left:16px !important;
+    right:16px !important;
+    flex-direction:column !important;
+    gap:6px !important;
+    padding:10px !important;
+    background:rgba(255,255,255,.92) !important;
+    border:1px solid var(--border) !important;
+    border-radius:18px !important;
+    box-shadow:0 14px 34px rgba(31,41,55,.12) !important;
+    z-index:80 !important;
+  }
+  .nav-links.is-open{display:flex !important}
+  .nav-links a{white-space:nowrap !important}
+
+  /* Hero: apila (para que "Para familias" quede debajo) */
+  .hero-banner-inner{display:flex !important; flex-direction:column !important; gap:16px !important}
+  #para-familias{order:2 !important}
+  .hero-copy{order:1 !important}
+}
