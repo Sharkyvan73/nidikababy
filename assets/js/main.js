@@ -94,3 +94,28 @@
       console.warn(err);
     });
 })();
+
+
+/* Mobile nav toggle */
+(function(){
+  const btn = document.querySelector(".nav-toggle");
+  const nav = document.getElementById("site-nav");
+  if(!btn || !nav) return;
+
+  function closeNav(){
+    nav.classList.remove("is-open");
+    btn.setAttribute("aria-expanded","false");
+  }
+  btn.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", String(isOpen));
+  });
+  document.addEventListener("click", (e) => {
+    if(!nav.classList.contains("is-open")) return;
+    if(e.target === btn || btn.contains(e.target) || nav.contains(e.target)) return;
+    closeNav();
+  });
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape") closeNav();
+  });
+})();

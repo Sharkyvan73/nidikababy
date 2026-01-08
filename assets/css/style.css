@@ -264,8 +264,35 @@ img{max-width:100%; height:auto}
 }
 
 @media (max-width: 980px){
-  /* Header: marca arriba + menú en fila con scroll */
-  .nav-inner{flex-direction:column; align-items:flex-start; gap:10px; padding:12px 0}
+  .nav{position:sticky; top:0; z-index:60}
+  .nav .container{position:relative}
+
+  /* Header (móvil): marca a la izquierda + botón menú + lista desplegable */
+  .nav-inner{flex-direction:row !important; align-items:center !important; justify-content:space-between !important; gap:10px !important; padding:12px 0 !important}
+  .nav-toggle{display:inline-flex !important; align-items:center; justify-content:center}
+  .nav-links{
+    display:none !important;
+    position:absolute;
+    top:64px;
+    right:16px;
+    left:16px;
+    flex-direction:column;
+    gap:6px;
+    padding:10px;
+    background:rgba(255,255,255,.92);
+    border:1px solid var(--border);
+    border-radius:18px;
+    box-shadow:0 14px 34px rgba(31,41,55,.12);
+    z-index:50;
+  }
+  .nav-links a{white-space:nowrap; font-size:1rem; padding:10px 12px; border-radius:14px}
+  .nav-links a:hover{background:rgba(243,232,255,.8)}
+
+  /* Layout hero/cards en móvil */
+  .hero-banner-inner{grid-template-columns:1fr !important; padding:18px !important}
+  .hero-cards{grid-template-columns:1fr !important}
+
+.nav-inner{flex-direction:column; align-items:flex-start; gap:10px; padding:12px 0}
   .nav-links{
     width:100%;
     justify-content:flex-start;
@@ -277,14 +304,6 @@ img{max-width:100%; height:auto}
   }
   .nav-links::-webkit-scrollbar{display:none}
   .nav-links a{white-space:nowrap; font-size:.98rem; padding:8px 10px}
-
-  /* Layout hero/cards en móvil */
-  .hero-banner-inner{grid-template-columns:1fr; padding:18px}
-  .hero-copy h1{font-size:2.1rem}
-  .hero-cards{grid-template-columns:1fr}
-  .grid{grid-template-columns:1fr}
-
-  .logo{width:48px;height:48px}
 
   /* Mejor contraste en móvil */
   .lead, .small, .hint, .kicker{color:var(--text)}
@@ -405,4 +424,19 @@ img{max-width:100%; height:auto}
 }
 @media (max-width: 980px){
   .aff-media img{height:160px}
+}
+
+
+/* Mobile nav toggle */
+.nav-toggle{
+  display:none;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.72);
+  border-radius:14px;
+  padding:10px 12px;
+  font-size:18px;
+  line-height:1;
+}
+.nav-links.is-open{
+  display:flex !important;
 }
