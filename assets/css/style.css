@@ -222,8 +222,7 @@ img{max-width:100%; height:auto}
 .hero-copy h1{font-size:2.1rem}
   .hero-cards{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
-  .nav-links{gap:8px;flex-wrap:wrap;justify-content:flex-end}
-  .logo{width:48px;height:48px}
+.logo{width:48px;height:48px}
 }
 
 
@@ -251,8 +250,7 @@ img{max-width:100%; height:auto}
 .hero-copy h1{font-size:2.1rem}
   .hero-cards{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
-  .nav-links{gap:8px;flex-wrap:wrap;justify-content:flex-end}
-  .logo{width:48px;height:48px}
+.logo{width:48px;height:48px}
 
   /* Mejor contraste en móvil */
   .lead, .small, .hint, .kicker{color:var(--text)}
@@ -291,18 +289,7 @@ img{max-width:100%; height:auto}
   /* Layout hero/cards en móvil */
   .hero-banner-inner{grid-template-columns:1fr !important; padding:18px !important}
   .hero-cards{grid-template-columns:1fr !important}
-
-.nav-inner{flex-direction:column; align-items:flex-start; gap:10px; padding:12px 0}
-  .nav-links{
-    width:100%;
-    justify-content:flex-start;
-    gap:10px;
-    flex-wrap:nowrap;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-    padding-bottom:4px;
-  }
-  .nav-links::-webkit-scrollbar{display:none}
+.nav-links::-webkit-scrollbar{display:none}
   .nav-links a{white-space:nowrap; font-size:.98rem; padding:8px 10px}
 
   /* Mejor contraste en móvil */
