@@ -726,3 +726,88 @@ html, body { overflow-x: hidden; }
 @media (max-width: 720px){
   .mrow-title{ display:none !important; }
 }
+
+
+/* V23 tweaks */
+.hero-big-logo{
+  max-width: 520px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display:block;
+  margin: 0 auto;
+  filter: contrast(1.18) saturate(1.08) brightness(0.96) drop-shadow(0 10px 24px rgba(0,0,0,.12));
+}
+
+/* Para familias: mostrar imagen completa */
+.pf-illus{
+  overflow: visible !important;
+}
+.pf-illus img{
+  max-height: none !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* Top 3 guías: carrusel centrado + imagen cuadrada y completa */
+#top-guides .carousel{
+  justify-content: center;
+}
+#top-guides .carousel-card{
+  flex: 0 0 420px;
+  max-width: 420px;
+}
+#top-guides .thumb{
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255,255,255,.65);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#top-guides .thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+}
+
+/* Móvil: comparativa en tarjetas sin Pros/Contras, simétrica */
+@media (max-width: 980px){
+  .matrix-mobile .micons-all{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .matrix-mobile .micon{
+    border: 1px solid rgba(31,41,55,.10);
+    border-radius: 14px;
+    background: rgba(255,255,255,.75);
+    padding: 10px 8px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-height: 74px;
+  }
+  .matrix-mobile .mlab{
+    font-size: .75rem;
+    font-weight: 900;
+    color: rgba(31,41,55,.70);
+    text-align:center;
+    line-height: 1.05;
+    margin-bottom: 6px;
+  }
+  .matrix-mobile .mval{
+    font-size: 1.45rem;
+    line-height: 1;
+  }
+}
+
+
+@media (max-width: 980px){
+  .matrix-mobile .mname{font-size: 1.05rem;}
+}
+#para-familias{margin-left:auto;margin-right:auto;}
