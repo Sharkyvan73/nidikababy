@@ -842,8 +842,35 @@ html, body { overflow-x: hidden; }
   width:100%;
   max-width: 980px;
   margin:0 auto;
+  text-align:center;
 }
-.home-panels #para-familias .pf-illus{max-height: 300px;}
+.home-panels #para-familias .pf-illus{max-height: 300px; margin-left:auto; margin-right:auto;}
+
+/* Home: centra el contenido dentro de los dos posts (PC + móvil) */
+.home-panels #para-familias p,
+.home-panels #como-trabajamos p{
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 62ch;
+  width: min(62ch, 100%);
+}
+
+/* Listas centradas (contenedor centrado, texto legible) */
+.home-panels #para-familias ul,
+.home-panels #como-trabajamos ul{
+  list-style-position: inside;
+  padding-left:0;
+  margin-left:auto;
+  margin-right:auto;
+  display:inline-block;
+  text-align:left;
+  max-width: 66ch;
+  width: min(66ch, 100%);
+}
+
+.home-panels #para-familias .badge{justify-content:center;}
+.home-panels #para-familias .cta-row{justify-content:center;}
+.home-panels #como-trabajamos .work-list{padding-left:0;}
 
 /* Carrusel top 3: una slide visible + miniatura cuadrada (sin imagen gigante) */
 #guias .carousel{

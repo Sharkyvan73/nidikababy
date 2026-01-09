@@ -8,6 +8,31 @@
 
   const qInput = document.querySelector("[data-search]");
 
+
+  // Home search: redirect to /guias.html with the query
+  function wireHomeSearchInput(){
+    if(!qInput) return;
+    const go = ()=>{
+      const q = (qInput.value || "").trim();
+      const url = q ? `/guias.html?q=${encodeURIComponent(q)}` : "/guias.html";
+      window.location.href = url;
+    };
+    qInput.addEventListener("keydown", (e)=>{
+      if(e.key === "Enter"){
+        e.preventDefault();
+        go();
+      }
+    });
+    // iOS/Android "search" / "go"
+    qInput.addEventListener("search", (e)=>{
+      e.preventDefault();
+      go();
+    });
+  }
+
+  wireHomeSearchInput();
+
+
   async function loadPosts() {
     const res = await fetch("/posts.json", { cache: "no-store" });
     if (!res.ok) throw new Error("No se pudo cargar posts.json");
@@ -173,6 +198,13 @@ function renderList(container, posts, query) {
   function wireSearch(posts) {
     const lists = $$("[data-post-list]");
     const qInput = $("#q");
+
+    // Prefill from URL: /guias.html?q=...
+    if (qInput) {
+      const params = new URLSearchParams(window.location.search);
+      const initial = params.get("q") || params.get("s") || params.get("search") || "";
+      if (initial && !qInput.value) qInput.value = initial;
+    }
 
     const renderAll = (q) => lists.forEach((c) => renderList(c, posts, q));
     renderAll(qInput ? qInput.value : "");
